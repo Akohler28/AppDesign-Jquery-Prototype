@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name=description content="Safe-T jQuery Mobile">
+    <meta name="author" content="Aaron Kohler">
+    <title>Safe-T</title>
+	
+    <!-- ADD the three CDN snippets from jquerymobile.com Downloads -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" >
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="javascripts/jquery.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale = 1">
+
+</head>
+<body>
+
+<!-- Login Page -->
+<div data-role="page" id="login">
+
+	<header data-role = "header">
+		<h3> Login </h3>
+	</header>
+	
+	<form data-role="form">
+		<label align="center"> Username ***Not implemented, just click login**** </label>
+		<input type="text" placeholder="username" style="width:10px" name="username">
+		<label align="center"> Password </label>
+		<input type="password" name="password">
+	
+	</form>
+	
+	<footer data-role="footer" data-position="fixed" name="loginFooter">
+		<h1><a  href="#map"><button class="ui-btn">Login </button></a></h1>
+		<p><a href=""> create account </a></p>
+	</footer>
+	
+		
+</div> <!-- Login Page -->
+
+<!-- Map --> 
+<div data-role="page" id ="map">
+	<header data-role="header">
+    <nav data-role="navbar">
+		<ul>
+		<li><a data-icon="alert" href="#map">Map</a></li>
+		<li><a data-icon="bars" href="#locations">Locations</a></li>
+		<li><a data-icon="user" href="#profile">Profile</a></li>
+		<li><a data-icon="lock" href="#login"> Logout</a></li>
+		</ul>
+    </nav>
+	</header>
+	
+	<h1> No Active Alerts </h1>
+	
+	<img width="60%" class="center" src="map.png" >
+	
+</div> <!-- map -->
+
+<!-- Locations -->
+<div data-role="page" id="locations">
+<header data-role="header">
+    <nav data-role="navbar">
+		<ul>
+		<li><a data-icon="alert" href="#map">Map</a></li>
+		<li><a data-icon="bars" href="#locations">Locations</a></li>
+		<li><a data-icon="user" href="#profile">Profile</a></li>
+		<li><a data-icon="lock" href="#login"> Logout</a></li>	
+		</ul>
+		
+    </nav>
+	</header>
+	
+	<fieldset data-role="controlgroup">
+    <legend><h3>Safe Locations</h3></legend>
+        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+        <label for="radio-choice-1">Bothell Fire Department || 1.7 mi</label>
+        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+        <label for="radio-choice-2">King County Library || 1.4 mi</label>
+        <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+        <label for="radio-choice-3">Bothell Police Department || 1.9 mi</label>
+	</fieldset>
+	
+	<a href="#directions">GET DIRECTIONS</a>
+	
+	
+</div> <!-- locations -->
+
+<!-- Profile -->
+<div data-role="page" id="profile">
+<header data-role="header">
+    <nav data-role="navbar">
+		<ul>
+		<li><a data-icon="alert" href="#map">Map</a></li>
+		<li><a data-icon="bars" href="#locations">Locations</a></li>
+		<li><a data-icon="user" href="#profile">Profile</a></li>
+		<li><a data-icon="lock" href="#login"> Logout</a></li>		
+		</ul>
+    </nav>
+	</header>
+
+	<p> Your profile </p>
+
+</div> <!-- Profile -->
+
+<!-- Directions -->
+<div data-role="page" id="directions">
+	<header data-role="header">
+    <nav data-role="navbar">
+		<ul>
+		<li><a data-icon="alert" href="#map">Map</a></li>
+		<li><a data-icon="bars" href="#locations">Locations</a></li>
+		<li><a data-icon="user" href="#profile">Profile</a></li>
+		<li><a data-icon="lock" href="#login"> Logout</a></li>		
+		</ul>
+    </nav>
+	</header>
+	
+	<img src="directions.png" class="center" width="60%">
+	
+	<footer data-role="footer" data-position="fixed" name="cancel">
+		<h1><a  href="#map"><button class="ui-btn"> Cancel</button></a></h1>
+	</footer>
+
+
+</div> <!-- Directions -->
+</body>	
+</html>
